@@ -1,0 +1,11 @@
+# SPDX-FileCopyrightText: 2023 KOINSLOT, Inc.
+#
+# SPDX-License-Identifier: CC0-1.0
+
+# caches
+.cache/
+
+# build files
+build/
+sdkconfig
+sdkconfig.old

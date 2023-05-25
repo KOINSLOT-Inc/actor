@@ -1,0 +1,9 @@
+dependencies:
+  idf:
+    component_hash: null
+    source:
+      type: idf
+    version: 5.1.0
+manifest_hash: 9098479bbe88251911601e6e67f446895951249ae526c33e330068f400bfd5ac
+target: linux
+version: 1.0.0

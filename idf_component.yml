@@ -1,0 +1,10 @@
+# SPDX-FileCopyrightText: 2023 KOINSLOT, Inc.
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+version: "0.0.1"
+description: "Actor model multitasking using FreeRTOS tasks"
+url: "https://github.com/KOINSLOT-Inc/actor"
+dependencies:
+  idf:
+    version: ">5.0.0"

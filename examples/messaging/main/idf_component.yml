@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: 2023 KOINSLOT, Inc.
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+version: "0.0.1"
+description: "Example of two actors publishing and handling messages"
+url: "https://github.com/KOINSLOT-Inc/actor/blob/main/examples/messaging"
+dependencies:
+  idf:
+    version: ">5.0.0"
+  kywy/actor:
+    version: "0.0.1"
+    override_path: "../../../"

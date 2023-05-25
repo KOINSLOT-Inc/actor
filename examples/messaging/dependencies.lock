@@ -1,0 +1,15 @@
+dependencies:
+  idf:
+    component_hash: null
+    source:
+      type: idf
+    version: 5.1.0
+  kywy/actor:
+    component_hash: null
+    source:
+      path: /Users/Erik/repos/KOINSLOT-Inc/actor
+      type: local
+    version: 0.0.1
+manifest_hash: 7da298e6b4ab67c2a797b702dcd6c85a7bff60ec7740765b24266b3b5fc2d07d
+target: esp32c3
+version: 1.0.0
