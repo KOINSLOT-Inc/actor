@@ -4,8 +4,13 @@
 
 # caches
 .cache/
+__pycache__/
 
 # build files
 build/
 sdkconfig
 sdkconfig.old
+
+# test files
+test.log
+test_report.xml

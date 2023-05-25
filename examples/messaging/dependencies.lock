@@ -7,9 +7,9 @@ dependencies:
   kywy/actor:
     component_hash: null
     source:
-      path: /Users/Erik/repos/KOINSLOT-Inc/actor
+      path: /actor
       type: local
     version: 0.0.1
-manifest_hash: 7da298e6b4ab67c2a797b702dcd6c85a7bff60ec7740765b24266b3b5fc2d07d
-target: esp32c3
+manifest_hash: 9abde3fb3694d50af9158e177b519768e84956ff7658144790bd6a5738c5ffbd
+target: linux
 version: 1.0.0

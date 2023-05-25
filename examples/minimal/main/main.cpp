@@ -3,6 +3,7 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 #include "Actor.hpp"
+#include <cstdio>
 
 class Greeter : public Actor::Actor {
 public:
