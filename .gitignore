@@ -10,6 +10,7 @@ __pycache__/
 build/
 sdkconfig
 sdkconfig.old
+dependencies.lock
 
 # test files
 test.log
