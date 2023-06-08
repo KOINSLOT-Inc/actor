@@ -3,7 +3,7 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 #include "Actor.hpp"
-#include <cstdio>
+#include <stdio.h>
 
 typedef enum : int {
   CALL,

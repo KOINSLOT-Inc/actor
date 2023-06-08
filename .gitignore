@@ -9,6 +9,8 @@ __pycache__/
 # build files
 build/
 sdkconfig
+!sdkconfig.ci
+!sdkconfig.defaults
 sdkconfig.old
 dependencies.lock
 
