@@ -16,7 +16,7 @@ typedef enum : uint8_t {
   DIRECTIVE_EXIT,
 } Directive;
 
-typedef struct Message {
+struct Message {
   Message() : directive(DIRECTIVE_HANDLE), signal(0), data(nullptr){};
   Message(int signal)
       : directive(DIRECTIVE_HANDLE), signal(signal), data(nullptr){};
@@ -25,7 +25,7 @@ typedef struct Message {
   Directive directive;
   int signal;
   void *data;
-} Message;
+};
 
 class Actor {
 private:
