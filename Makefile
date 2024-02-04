@@ -13,10 +13,15 @@ flash-server:
 	fi
 	esp_rfc2217_server.py -v -p 4000 $$IDF_PORT
 
+# component management
+.PHONY: publish_component
+publish_component:
+	compote component upload --namespace kywyerik --name display --version $(VERSION)
+
 # combine targets and forward into devkit container to avoid duplicate container startup costs
 DEVKIT := docker run -v $$PWD:$$PWD -w $$PWD -it -e LOCAL_IDF_PATH=$$IDF_PATH \
 	  -e LOCAL_IDF_TOOLS_PATH=$${IDF_TOOLS_PATH:-~/.espressif} \
 	  kywy/devkit:latest
 
 .PHONY: build lint test
-$(eval $(filter-out flash-server license,$(MAKECMDGOALS)) &:; $$(DEVKIT) sh -c 'make --file /devkit/Makefile $(MAKECMDGOALS)')
+$(eval $(filter-out flash-server license publish_component,$(MAKECMDGOALS)) &:; $$(DEVKIT) sh -c 'make --file /devkit/Makefile $(MAKECMDGOALS)')
